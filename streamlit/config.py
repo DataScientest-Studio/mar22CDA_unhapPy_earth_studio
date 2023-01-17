@@ -27,5 +27,9 @@ globales_file = '../data/unhappy_earth/temperatures_globales.csv'
 hemispheres_file = '../data/unhappy_earth/temperatures_hemispheres.csv'
 countries_file = '../data/unhappy_earth/temperatures_countries.csv'
 
-c02_global = '../data/unhappy_earth/co2_global.csv'
+co2_global = '../data/unhappy_earth/co2_global.csv'
 co2_countries = '../data/unhappy_earth/co2_countries.csv'
+
+temperatures_globales_file = '../data/unhappy_earth/temperatures_globales.csv'
+temperatures_hemispheres_file = '../data/unhappy_earth/temperatures_hemispheres.csv'
+temperatures_countries_file = '../data/unhappy_earth/temperatures_countries.csv'

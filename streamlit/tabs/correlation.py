@@ -7,6 +7,7 @@ from scipy.stats import pearsonr
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.metrics import r2_score
+import config
 
 
 title = "L'évolution des températures est-elle corrélée aux émissions de $CO_2$ ?"
@@ -33,8 +34,8 @@ def run():
         )
     
     # Lecture des datasets
-    global_land = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
-    co2_global = pd.read_csv('../data/unhappy_earth/co2_global.csv')
+    global_land = pd.read_csv(config.global_file)
+    co2_global = pd.read_csv(config.co2_global)
 
     # Preprocess sur datasets
     co2_global_reduc = co2_global.rename(columns={'Year': 'year'})

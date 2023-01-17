@@ -22,7 +22,7 @@ def read_temps():
 def read_co2():
     #config.c02_global = '../data/unhappy_earth/co2_global.csv'
     #config.co2_countries = '../data/unhappy_earth/co2_countries.csv'
-    globales = pd.read_csv(config.c02_global)
+    globales = pd.read_csv(config.co2_global)
     countries = pd.read_csv(config.co2_countries)
     return globales, countries
 

@@ -3,23 +3,22 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import geopandas as gpd
-
+import config
 
 title = "Confirmation du phénomène"
 sidebar_name = "Confirmation"
 
 
 def read_temps():
-    globales = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
-    hemispheres = pd.read_csv(
-        '../data/unhappy_earth/temperatures_hemispheres.csv')
-    countries = pd.read_csv('../data/unhappy_earth/temperatures_countries.csv')
+    globales = pd.read_csv(config.temperatures_globales_file)
+    hemispheres = pd.read_csv(config.temperatures_hemispheres_file)
+    countries = pd.read_csv(config.temperatures_countries_file)
     return globales, hemispheres, countries
 
 
 def read_co2():
-    globales = pd.read_csv('../data/unhappy_earth/co2_global.csv')
-    countries = pd.read_csv('../data/unhappy_earth/co2_countries.csv')
+    globales = pd.read_csv(config.co2_global)
+    countries = pd.read_csv(config.co2_countries)
     return globales, countries
 
 
