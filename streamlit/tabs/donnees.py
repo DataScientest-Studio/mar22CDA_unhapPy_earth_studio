@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import config
 
 
 title = "Données utilisées"
@@ -10,14 +11,19 @@ plt.style.use('seaborn-whitegrid')
 
 
 def read_temps():
-    globales = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
-    hemispheres = pd.read_csv('../data/unhappy_earth/temperatures_hemispheres.csv')
-    countries = pd.read_csv('../data/unhappy_earth/temperatures_countries.csv')
+    #globales_file = '../data/unhappy_earth/temperatures_globales.csv'
+    #hemispheres_file = '../data/unhappy_earth/temperatures_hemispheres.csv'
+    #countries_file = '../data/unhappy_earth/temperatures_countries.csv'
+    globales = pd.read_csv(config.globales_file)
+    hemispheres = pd.read_csv(config.hemispheres_file)
+    countries = pd.read_csv(config.countries_file)
     return globales, hemispheres, countries
 
 def read_co2():
-    globales = pd.read_csv('../data/unhappy_earth/co2_global.csv')
-    countries = pd.read_csv('../data/unhappy_earth/co2_countries.csv')
+    #config.c02_global = '../data/unhappy_earth/co2_global.csv'
+    #config.co2_countries = '../data/unhappy_earth/co2_countries.csv'
+    globales = pd.read_csv(config.c02_global)
+    countries = pd.read_csv(config.co2_countries)
     return globales, countries
 
 

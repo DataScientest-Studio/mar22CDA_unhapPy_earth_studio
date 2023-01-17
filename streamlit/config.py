@@ -21,3 +21,11 @@ TEAM_MEMBERS = [
            github_url="https://github.com/Nic0C")]
 
 PROMOTION = "Promotion Continue Data Analyst - Mars 2022"
+
+# liste de fichiers
+globales_file = '../data/unhappy_earth/temperatures_globales.csv'
+hemispheres_file = '../data/unhappy_earth/temperatures_hemispheres.csv'
+countries_file = '../data/unhappy_earth/temperatures_countries.csv'
+
+c02_global = '../data/unhappy_earth/co2_global.csv'
+co2_countries = '../data/unhappy_earth/co2_countries.csv'
