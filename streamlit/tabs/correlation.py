@@ -14,7 +14,7 @@ sidebar_name = "Corrélations"
                                                     
 def run():
     
-    st.image("streamlit/assets/Reftinsky_reservoir_of_Sverdlovsk_region.jpg", use_column_width=True)   
+    st.image("assets/Reftinsky_reservoir_of_Sverdlovsk_region.jpg", use_column_width=True)   
     st.title(title)
     
     
@@ -33,8 +33,8 @@ def run():
         )
     
     # Lecture des datasets
-    global_land = pd.read_csv('data/unhappy_earth/temperatures_globales.csv')
-    co2_global = pd.read_csv('data/unhappy_earth/co2_global.csv')
+    global_land = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
+    co2_global = pd.read_csv('../data/unhappy_earth/co2_global.csv')
 
     # Preprocess sur datasets
     co2_global_reduc = co2_global.rename(columns={'Year': 'year'})

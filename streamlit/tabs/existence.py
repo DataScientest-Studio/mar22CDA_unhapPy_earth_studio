@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import geopandas as gpd
 
 
 title = "Confirmation du phénomène"
@@ -9,16 +10,16 @@ sidebar_name = "Confirmation"
 
 
 def read_temps():
-    globales = pd.read_csv('data/unhappy_earth/temperatures_globales.csv')
+    globales = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
     hemispheres = pd.read_csv(
-        'data/unhappy_earth/temperatures_hemispheres.csv')
-    countries = pd.read_csv('data/unhappy_earth/temperatures_countries.csv')
+        '../data/unhappy_earth/temperatures_hemispheres.csv')
+    countries = pd.read_csv('../data/unhappy_earth/temperatures_countries.csv')
     return globales, hemispheres, countries
 
 
 def read_co2():
-    globales = pd.read_csv('data/unhappy_earth/co2_global.csv')
-    countries = pd.read_csv('data/unhappy_earth/co2_countries.csv')
+    globales = pd.read_csv('../data/unhappy_earth/co2_global.csv')
+    countries = pd.read_csv('../data/unhappy_earth/co2_countries.csv')
     return globales, countries
 
 
@@ -312,7 +313,7 @@ collectées. Le graphique suivant permet de naviguer dans le temps, des premièr
     )
     
         
-    import geopandas as gpd
+    #import geopandas as gpd
     
     # get the geometry (and some more info) about countries.
     world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))

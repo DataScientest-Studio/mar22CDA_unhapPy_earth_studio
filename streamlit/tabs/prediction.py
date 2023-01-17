@@ -12,10 +12,10 @@ sidebar_name = "Prédictions"
 
 def run():
 
-    st.image("streamlit/assets/station_meteo.jpg", use_column_width=True)    
+    st.image("assets/station_meteo.jpg", use_column_width=True)    
 
 #Importer les donnes:
-    df = pd.read_csv('data/unhappy_earth/temperatures_globales.csv')
+    df = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
     
     st.title("Modélisation / prédiction de la température sur les prochaines années.")
     

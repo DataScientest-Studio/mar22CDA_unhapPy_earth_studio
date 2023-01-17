@@ -10,14 +10,14 @@ plt.style.use('seaborn-whitegrid')
 
 
 def read_temps():
-    globales = pd.read_csv('data/unhappy_earth/temperatures_globales.csv')
-    hemispheres = pd.read_csv('data/unhappy_earth/temperatures_hemispheres.csv')
-    countries = pd.read_csv('data/unhappy_earth/temperatures_countries.csv')
+    globales = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
+    hemispheres = pd.read_csv('../data/unhappy_earth/temperatures_hemispheres.csv')
+    countries = pd.read_csv('../data/unhappy_earth/temperatures_countries.csv')
     return globales, hemispheres, countries
 
 def read_co2():
-    globales = pd.read_csv('data/unhappy_earth/co2_global.csv')
-    countries = pd.read_csv('data/unhappy_earth/co2_countries.csv')
+    globales = pd.read_csv('../data/unhappy_earth/co2_global.csv')
+    countries = pd.read_csv('../data/unhappy_earth/co2_countries.csv')
     return globales, countries
 
 

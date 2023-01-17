@@ -7,7 +7,7 @@ streamlit
 Prophet
 sklearn
 geopandas
-geoplot
+#geoplot
 mapclassify
 pycountry
 seaborn
