@@ -27,7 +27,7 @@ TABS = OrderedDict(
     [
         (intro.sidebar_name, intro),
         (donnees.sidebar_name, donnees),
-        (existence.sidebar_name, existence),
+        (existence.sidebar_name, existence), # AKA confirmation
         (correlation.sidebar_name, correlation),
         (prediction.sidebar_name, prediction),
         (conclusion.sidebar_name, conclusion),
