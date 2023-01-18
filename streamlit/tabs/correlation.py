@@ -34,7 +34,7 @@ def run():
         )
     
     # Lecture des datasets
-    global_land = pd.read_csv(config.global_file)
+    global_land = pd.read_csv(config.globales_file)
     co2_global = pd.read_csv(config.co2_global)
 
     # Preprocess sur datasets

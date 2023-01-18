@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from prophet import Prophet
-
+import config
 
 title = "Prédictions"
 sidebar_name = "Prédictions"
@@ -14,8 +14,8 @@ def run():
 
     st.image("assets/station_meteo.jpg", use_column_width=True)    
 
-#Importer les donnes:
-    df = pd.read_csv('../data/unhappy_earth/temperatures_globales.csv')
+    #Importer les donnes:
+    df = pd.read_csv(config.temperatures_globales_file)
     
     st.title("Modélisation / prédiction de la température sur les prochaines années.")
     

@@ -22,7 +22,7 @@ TEAM_MEMBERS = [
 
 PROMOTION = "Promotion Continue Data Analyst - Mars 2022"
 
-# liste de fichiers
+# liste des fichiers de données
 globales_file = '../data/unhappy_earth/temperatures_globales.csv'
 hemispheres_file = '../data/unhappy_earth/temperatures_hemispheres.csv'
 countries_file = '../data/unhappy_earth/temperatures_countries.csv'
