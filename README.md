@@ -76,42 +76,4 @@ Exemple du repo actuel:
 
 ### **Les appels et étapes de déploiement sur studio :**
 
-1. Cloner le projet et installer les requirements :
-
-```
-curl -X POST -H 'Content-Type: application/json' -i 'http://studio.datascientest.com:8899/project' --data '{"id": "NOM_DU_PROJET","repo": "https://github.com/DataScientest-Studio/NOM_DU_PROJET.git"}'
-```
-
-2. Démarrer le service :
-
-```
-curl -X PUT -i "http://studio.datascientest.com:8899/project/NOM_DU_PROJET/start"
-```
-
-3. Obtenir le status :
-
-```
-curl -X GET -i "http://studio.datascientest.com:8899/project/NOM_DU_PROJET/status"
-```
-
-**Une fois démarré, il est accessible via [https://studio.datascientest.com/project/NOM_DU_PROJET](https://studio.datascientest.com/project/NOM_DU_PROJET "https://studio.datascientest.com/project/NOM_DU_PROJET")**
-
-### **Les étapes optionnelles (si besoin)):**
-
-1. Arrêter le service (OPTIONNEL si besoin) :
-
-```
-curl -X PUT -i "http://studio.datascientest.com:8899/project/NOM_DU_PROJET/stop"
-```
-
-2. Le supprimer :
-
-```
-curl -X DELETE -i "http://studio.datascientest.com:8899/project/NOM_DU_PROJET"
-```
-
-### **Limitations :**
-
-* Le git clone et l'installation des requirements peuvent prendre du temps. C'est normal si l'appel prend du temps à aboutir.
-* Python 3.6. L'upgrade risque de casser tous les autres projets installés.
-* Corollaire du point précédent : certaines dépendances dans le requirements.txt risquent de ne pas être satisfaites.
+consulter la documentation en interne pour laprcédure de déploiement
