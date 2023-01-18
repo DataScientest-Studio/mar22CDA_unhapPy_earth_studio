@@ -1,0 +1,49 @@
+.
+├── app.py
+├── assets
+│   ├── CO2.jpg
+│   ├── earth_2.gif
+│   ├── github-logo.png
+│   ├── Global_Warming.jpg
+│   ├── linkedin-logo-black.png
+│   ├── linkedin-logo.png
+│   ├── logo-datascientest.png
+│   ├── rechauffement-climatique-illustration.webp
+│   ├── Reftinsky_reservoir_of_Sverdlovsk_region.jpg
+│   ├── sample-image.jpg
+│   ├── starving_polar_bear.jpg
+│   ├── station_meteo.jpg
+│   ├── Unhappy_earth2.jpg
+│   ├── Unhappy_earth.jpg
+│   └── Unhappy_earth.png
+├── config.py
+├── data
+│   ├── berkeley_earth
+│   │   ├── Complete_TAVG_complete.txt
+│   │   ├── data_all_countries.csv
+│   │   └── Sets_by_hemisphere
+│   │       ├── northern-hemisphere-TAVG-Trend.txt
+│   │       └── southern-hemisphere-TAVG-Trend.txt
+│   ├── co2
+│   │   ├── global-co2-fossil-plus-land-use.csv
+│   │   └── owid-co2-data.csv
+│   └── unhappy_earth
+│       ├── co2_countries.csv
+│       ├── co2_global.csv
+│       ├── temperatures_countries.csv
+│       ├── temperatures_globales.csv
+│       └── temperatures_hemispheres.csv
+├── member.py
+├── README.md
+├── requirements.txt
+├── structure_repo.txt
+├── style.css
+└── tabs
+    ├── conclusion.py
+    ├── correlation.py
+    ├── donnees.py
+    ├── existence.py
+    ├── intro.py
+    ├── prediction.py
+
+9 directories, 47 files
