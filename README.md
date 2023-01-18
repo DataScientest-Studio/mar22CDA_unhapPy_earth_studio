@@ -106,9 +106,9 @@ curl -X PUT -i "http://studio.datascientest.com:8899/project/NOM_DU_PROJET/stop"
 
 2. Le supprimer :
 
-   ```
-   curl -X DELETE -i "http://studio.datascientest.com:8899/project/NOM_DU_PROJET"
-   ```
+```
+curl -X DELETE -i "http://studio.datascientest.com:8899/project/NOM_DU_PROJET"
+```
 
 ### **Limitations :**
 
